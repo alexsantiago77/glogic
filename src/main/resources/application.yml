@@ -1,0 +1,23 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: challenge-global-logic
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+   console:
+    enabled: true
+  jpa:
+    show-sql: true
+
+app:
+  security:
+    token:
+      exp: 30000 #30 seconds
+    signature: "thisZisZanZexampleZofZmyZSignatureOKeywFreddyzzParedes"
+
